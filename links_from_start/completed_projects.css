@@ -1,0 +1,28 @@
+.list_of_projects{
+	width: 100%;
+	padding: 10px 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.list_item{
+	height: 200px;
+	border: 2px solid black;
+	flex-grow: 0;
+	flex-shrink: 0;
+	flex-basis: 200px;
+	margin: 5px;
+	padding: 5px;
+	color: black;
+	overflow: hidden;
+	position: relative;
+	border-radius: 10px;
+	font-size: 13px;
+}
+.separator{
+	width: 100px;
+	text-align: center;
+}
+.list_item:hover{
+	color: white;
+}
