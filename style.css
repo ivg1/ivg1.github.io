@@ -24,7 +24,7 @@ body{
     overflow: hidden;
     border: none;
     border-bottom: 2px solid black;
-    background-color: #000000;
+    background-color: black;
 }
 .header > ul > li a {
   display: flex;
@@ -54,7 +54,6 @@ body{
 	height: 40px;
 	border-radius: 50%;
 	overflow: hidden;
-	filter: invert(100%);
 }
 .hello_holder{
 	text-align: left;
