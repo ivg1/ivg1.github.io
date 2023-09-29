@@ -47,7 +47,7 @@ body{
 	font-size: 13px;
 }
 .header > ul > li > a > button:hover{
-	background-color: ##cccccc;
+	background-color: #cccccc;
 }
 .logo{
 	width: 40px;
