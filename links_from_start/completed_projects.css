@@ -29,5 +29,5 @@
 	text-align: center;
 }
 .list_item:hover{
-	filter: brightness(80%);
+	background-color: #c4c4c4;
 }
