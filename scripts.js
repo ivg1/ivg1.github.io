@@ -19,7 +19,7 @@ function secret_show(){
 function the_greater(){
 	const secret_holder = document.querySelector(".secrets_holder");
 	if (t===0){
-		secret_holder.style.height = "500px";
+		secret_holder.style.height = "1000px";
 		t++;
 	}
 }
