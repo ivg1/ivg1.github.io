@@ -135,7 +135,7 @@ body{
 	height: 400px;
 	background-color: #173259;
 	display: grid;
-	grid-template-columns: 1fr 150px 150px 150px 150px 150px 50px;
+	grid-template-columns: 1fr 150px 150px 150px 150px 150px 100px;
 	color: white;
 	margin: 0px auto;
 }
