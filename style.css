@@ -245,6 +245,7 @@ color: red;
 	position: absolute;
 	top: 0;
 	left: 0;
+	overflow: hidden;
 }
 .onload_holder{
 	width: 150px;
