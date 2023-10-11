@@ -57,7 +57,7 @@
 	height: 200px;
 	background-color: #173259;
 	display: grid;
-	grid-template-columns: 1fr 150px 150px;
+	grid-template-columns: 1fr 150px 150px 150px 150px;
 	color: white;
 	border-radius: 6px;
 	margin: 0px auto;
