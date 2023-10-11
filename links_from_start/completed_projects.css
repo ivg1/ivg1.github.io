@@ -1,18 +1,18 @@
 .project_choice{
 	width: 100%;
-	height: auto;
+	height: 100%;
 	margin: 0;
-	display: flex;
-	align-items: center;
+	display: block;
 	justify-content: center;
-	border-bottom: 3px solid #cccccc;
+	border-right: 2px double gray;
+	overflow: scroll;
 }
 .project_choice_item{
-	width: 23%;
+	width: 1fr;
 	height: 140px;
 	margin: 10px;
+	border-radius: 8px;
 	border: 2px solid black;
-	border-radius: 12px;
 	text-align: center;
 }
 .page_holder{
@@ -21,9 +21,69 @@
 }
 .project_info_holder{
 	width: 100%;
-	height: 600px;
-	background-color: #3e415e;
+	height: 100%;
+	display: block;
+	justify-content: center;
+	
 }
 .project_info{
-
+	width: 96%;
+	height: 80px;
+	background-color: #8CB3D9;
+	margin: 10px auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 6px;
+}
+.projects_holder{
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	height: 650px;
+	background-color: #f4f4f4;
+}
+.project_info_description{
+	width: 96%;
+	height: 300px;
+	background-color: #8CB3D9;
+	margin: 10px auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 6px;
+}
+.bottom_links_scrolled{
+	width: 96%;
+	height: 200px;
+	background-color: #173259;
+	display: grid;
+	grid-template-columns: 1fr 150px 150px;
+	color: white;
+	border-radius: 6px;
+	margin: 0px auto;
+}
+.column{
+	height: 200px;
+	width: 150px;
+	display: block;
+	text-align: center;
+}
+.column_big{
+	height: 200px;
+	width: 1fr;
+	display: block;
+	position: relative;
+}
+.bottom_links_scrolled > .column > p, a{
+	font-size: 13px;
+	color: #c7c7c7;
+	margin: 1px 0px;
+	text-decoration: none;
+}
+.bottom_links_scrolled > .column > p > a:hover{
+	color: #FFF4A3;
+}
+.socials_holder > a:hover{
+	filter: brightness(80%);	
+	cursor: url(/Local/images/hover.cur);
 }
