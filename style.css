@@ -55,6 +55,7 @@ body{
 }
 .header > ul > li > a > button:hover{
 	background-color: #525252;
+	cursor: progress;
 }
 .logo{
 	width: 40px;
@@ -94,6 +95,7 @@ body{
 }
 .goals_button:hover{
 	filter: brightness(85%);
+	cursor: progress;
 }
 .who_am_i{
 	width: 100%;
@@ -128,36 +130,42 @@ body{
 	width: 50%;
 	height: auto;
 }
-.bottom_links{
+.bottom_links_scrolled{
 	width: 100%;
 	height: 400px;
 	background-color: #173259;
+	display: grid;
+	grid-template-columns: 1fr 150px 150px 150px 150px 100px;
 	color: white;
-	display: flex;
-	float: left;
-	align-items: center;
+	margin: 0px auto;
 }
-.menu_home{
-	height: 350px;
-	width: 200px;
-	border-right: 1px solid #6e6e6e;
-}
-.bottom_links > div > p > a{
-	color: #c7c7c7;
-	text-decoration: none;
-	margin-left: 35px;
-}
-.bottom_links > div > h2{
+.column{
+	height: 380px;
+	width: 150px;
+	display: block;
 	text-align: center;
 }
-.bottom_links > div > p > a:hover{
-	text-decoration: underline;
+.column_big{
+	height: 380px;
+	width: 1fr;
+	display: block;
+	position: relative;
 }
-.bottom_links > div > .sub > a{
-	font-size: 12px;
-	margin-left: 55px;
-	
+.bottom_links_scrolled > .column > p, a{
+	font-size: 13px;
+	color: #c7c7c7;
+	margin: 1px 0px;
+	text-decoration: none;
 }
+.bottom_links_scrolled > .column > p > a:hover{
+	color: #FFF4A3;
+}
+.socials_holder > a:hover{
+	filter: brightness(80%);	
+	cursor: url(/images/hover.cur);
+}
+
+
 .secrets_list{
 	background-image: linear-gradient(black, darkred);
 	width: 100%;
