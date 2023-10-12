@@ -1,3 +1,6 @@
+body{
+	background-color: #f4f4f4;
+}
 .project_choice{
 	width: 100%;
 	height: 100%;
@@ -17,14 +20,15 @@
 }
 .page_holder{
 	width: 100%;
-	height: auto;
+	height: 100vh;
+	overflow: hidden;
 }
 .project_info_holder{
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	display: block;
 	justify-content: center;
-	
+	overflow: scroll;
 }
 .project_info{
 	width: 96%;
@@ -39,18 +43,18 @@
 .projects_holder{
 	display: grid;
 	grid-template-columns: 1fr 3fr;
-	height: 650px;
+	height: 100%;
 	background-color: #f4f4f4;
 }
 .project_info_description{
 	width: 96%;
-	height: 300px;
-	background-color: #8CB3D9;
+	height: 600px;
 	margin: 10px auto;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	border-radius: 6px;
+	padding: 5px 0px;
+	display: block;
+	justify-content: center;
+	border: 2px solid black;
 }
 .bottom_links_scrolled{
 	width: 96%;
@@ -85,5 +89,10 @@
 }
 .socials_holder > a:hover{
 	filter: brightness(80%);	
-	cursor: url(/Local/images/hover.cur);
+	cursor: url(/images/hover.cur);
+}
+.stats{
+	width: 40%;
+	height: auto;
+	margin: 0 auto;
 }
