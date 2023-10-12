@@ -1,7 +1,7 @@
 let c = 0;
 let t = 0;
 
-setTimeout(showPage, 4000);
+setTimeout(showPage, 1000);
 function showPage(){
 	const page = document.querySelector(".page_holder");
 	const load_screen = document.querySelector(".onload_screen");
