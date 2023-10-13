@@ -79,6 +79,11 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	position: relative;
+}
+.intro_me > svg{
+	position: absolute;
+	bottom: 0;
 }
 .hello_description{
 	color: #808080;
@@ -106,6 +111,7 @@ body{
 	font-family: 'Exo 2', sans-serif;
 	font-size: 40px;
 	text-align: center;
+	margin-top: 0;
 }
 .who_am_i > hr{
 	border: 1px solid black;
@@ -162,7 +168,7 @@ body{
 }
 .socials_holder > a:hover{
 	filter: brightness(80%);	
-	cursor: url(/images/hover.cur);
+	cursor: url(images/hover.cur);
 }
 
 
@@ -245,7 +251,6 @@ color: red;
 	position: absolute;
 	top: 0;
 	left: 0;
-	overflow: hidden;
 }
 .onload_holder{
 	width: 150px;
