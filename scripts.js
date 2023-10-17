@@ -1,15 +1,80 @@
 let c = 0;
 let t = 0;
+let betaState = 0;
 
 let current_image = undefined;
-let images_array = ['note_images/science_p1.jpg','note_images/science_p2.jpg','note_images/science_p3.jpg','note_images/science_p4.jpg','note_images/science_p5.jpg','note_images/science_p6.jpg','note_images/science_p7.jpg','note_images/science_p8.jpg','note_images/science_p9.jpg','note_images/science_p10.jpg'];
+let images_array_science = ['note_images/science_p1.jpg','note_images/science_p2.jpg','note_images/science_p3.jpg','note_images/science_p4.jpg','note_images/science_p5.jpg','note_images/science_p6.jpg','note_images/science_p7.jpg','note_images/science_p8.jpg','note_images/science_p9.jpg','note_images/science_p10.jpg'];
 let images_array_count = 0;
 
 document.onkeydown = function (e) {
-	if(e.keyCode == 123) {
+	const note_c = document.querySelector(".note_c");
+	const note_d = document.querySelector(".note_d");
+	const note_e = document.querySelector(".note_e");
+	const note_f = document.querySelector(".note_f");
+	const note_g = document.querySelector(".note_g");
+	const note_a = document.querySelector(".note_a");
+	const note_b = document.querySelector(".note_b");
+	const note_2c = document.querySelector(".note_2c");
+	if (betaState === 1){
+		if(e.keyCode == 123) {
 		return false;
+		}
+		switch (e.key){
+			case "a":
+				note_c.currentTime = 0;
+				note_c.play()
+				break;
+			case "s":
+				note_d.currentTime = 0;
+				note_d.play()
+				break;
+			case "d":
+				note_e.currentTime = 0;
+				note_e.play()
+				break;
+			case "f":
+				note_f.currentTime = 0;
+				note_f.play()
+				break;
+			case "g":
+				note_g.currentTime = 0;
+				note_g.play()
+				break;
+			case "h":
+				note_a.currentTime = 0;
+				note_a.play()
+				break;
+			case "j":
+				note_b.currentTime = 0;
+				note_b.play()
+				break;
+			case "k":
+				note_2c.currentTime = 0;
+				note_2c.play()
+				break;
+		}
 	}
 }
+document.onkeyup = function(e){
+	const note_c = document.querySelector(".note_c");
+	const note_d = document.querySelector(".note_d");
+	const note_e = document.querySelector(".note_e");
+	const note_f = document.querySelector(".note_f");
+	const note_g = document.querySelector(".note_g");
+	const note_a = document.querySelector(".note_a");
+	const note_b = document.querySelector(".note_b");
+	const note_2c = document.querySelector(".note_2c");
+	
+	note_c.currentTime = 0;
+	note_d.currentTime = 0;
+	note_e.currentTime = 0;
+	note_f.currentTime = 0;
+	note_g.currentTime = 0;
+	note_a.currentTime = 0;
+	note_b.currentTime = 0;
+	note_2c.currentTime = 0;
+}
+
 
 function hide_image(){
 	const page = document.querySelector(".page_holder");
@@ -56,7 +121,7 @@ function the_greater(){
 function check_password(){
 	const passwors = document.querySelector("#password").value;
 	const notes = document.querySelector(".notes");
-	if (passwors === "finale"){
+	if (passwors === "uno"){
 		notes.style.visibility = "visible";
 		notes.style.opacity = "1";
 	} else{
@@ -102,8 +167,8 @@ function show_image(){
 	const image_clicked_on = document.querySelector(".show_note_holder > .show_note_image > .image_clicked_on");
 	const image_title = document.querySelector(".show_note_holder > .show_note_header > .image_name");
 	
-	image_clicked_on.setAttribute("src", images_array[images_array_count]);
-	image_title.innerHTML = images_array[images_array_count];
+	image_clicked_on.setAttribute("src", images_array_science[images_array_count]);
+	image_title.innerHTML = images_array_science[images_array_count];
 }
 function previous_image(){
 	images_array_count-=1;
@@ -120,4 +185,9 @@ function next_image(){
 	}
 	
 	show_image();
+}
+
+function enableBetaFeature(e){
+	alert('Beta features enabled. (keyboard becomes piano)');
+	betaState = 1;
 }
