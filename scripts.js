@@ -1,5 +1,6 @@
 let c = 0;
 let t = 0;
+let menu_state = 'hidden';
 let betaState = 0;
 
 let current_image = undefined;
@@ -55,26 +56,6 @@ document.onkeydown = function (e) {
 		}
 	}
 }
-document.onkeyup = function(e){
-	const note_c = document.querySelector(".note_c");
-	const note_d = document.querySelector(".note_d");
-	const note_e = document.querySelector(".note_e");
-	const note_f = document.querySelector(".note_f");
-	const note_g = document.querySelector(".note_g");
-	const note_a = document.querySelector(".note_a");
-	const note_b = document.querySelector(".note_b");
-	const note_2c = document.querySelector(".note_2c");
-	
-	note_c.currentTime = 0;
-	note_d.currentTime = 0;
-	note_e.currentTime = 0;
-	note_f.currentTime = 0;
-	note_g.currentTime = 0;
-	note_a.currentTime = 0;
-	note_b.currentTime = 0;
-	note_2c.currentTime = 0;
-}
-
 
 function hide_image(){
 	const page = document.querySelector(".page_holder");
@@ -190,4 +171,29 @@ function next_image(){
 function enableBetaFeature(e){
 	alert('Beta features enabled. (keyboard becomes piano)');
 	betaState = 1;
+}
+function showMenu(){
+	const menu = document.querySelector(".menu_list");
+	if (menu_state === "hidden"){
+		menu.style.visibility = "visible";
+		menu_state = "shown";
+	} else{
+		menu.style.visibility = "hidden";
+		menu_state = "hidden";
+	}
+}
+function smaller_secret_show(){
+	const s_activated_button = document.querySelector(".smaller_secrets");
+	const activated_button = document.querySelector(".button_a");
+	const secret_holder = document.querySelector(".secrets_holder");
+	if (c===0){
+		activated_button.style.transform = "rotateZ(24deg)";
+		activated_button.style.backgroundColor = "darkorange";
+		s_activated_button.style.color = "darkorange";
+		setTimeout(function(){
+			alert("a 'secret' has shown itself as a key to the greater");
+		}, 100);
+		secret_holder.classList.add("secrets_holder_height");
+		c++;
+	}
 }
