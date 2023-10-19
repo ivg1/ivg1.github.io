@@ -6,6 +6,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="scripts.js"></script>
         <script src="https://kit.fontawesome.com/eb64b239a1.js" crossorigin="anonymous"></script>
+
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     
+      <script>
+     
+    /* Add "https://api.ipify.org?format=json" statement
+               this will communicate with the ipify servers in
+               order to retrieve the IP address $.getJSON will
+               load JSON-encoded data from the server using a
+               GET HTTP request */
+                
+    $.getJSON("https://api.ipify.org?format=json", function(data) {
+         
+        // Setting text of element P with id gfg
+       // $(".hello").html(data.ip);
+		alert('your ip is '+ data.ip)
+    })
+    </script>
     </head>
     <body>
 		 <div class="onload_screen">
@@ -20,8 +38,18 @@
 			<h3 style="position: absolute; bottom: 200px">getting your IP Address...</h3>
 			<h4 style="position: absolute; left: 0; bottom: 0;">Update! -<br>You can now see images of my notes (still in dev)</h4>
 		 </div>
+		 <div class="menu_list">
+		 	<ul class="menu_list_list">
+				<li><a href="links_from_start/socials.html"><p>Socials</p></a></li><hr>
+				<li><a href="links_from_start/what_i_do.html"><p>What I do</p></a></li><hr>
+				<li><a href="links_from_start/my_achievements.html"><p>My Achievements</p></a></li><hr>
+				<li><a href="links_from_start/my_certificates.html"><p>My Certificates</p></a></li><hr>
+				<li><a href="links_from_start/completed_projects.html"><p>Projects</p></a></li><hr>
+				<li><a onclick="smaller_secret_show()" class="smaller_secrets"><p>Secrets</p></a></li>
+			</ul>
+		 </div>
 		 <div class="page_holder">
-		 
+		
         <div class="header">
             <ul>
                 <li><strong><a><img class="logo" src="images/sample_logo.jpeg">&nbsp;My Portfolio</a></strong></li>
@@ -31,6 +59,7 @@
 				  <li><a href="links_from_start/my_certificates.html"><button>My Certificates</button></a></li>
 				  <li><a href="links_from_start/completed_projects.html"><button>Projects</button></a></li>
 				  <li style="float: right;"><a><button class="button_a" onclick="secret_show()">Secrets</button></a></li>
+				  <li style="float: right;"><a onclick="showMenu()"><svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#c2c2c2}</style><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></a></li>
             </ul>
         </div>
 		 <div class="intro_me">
