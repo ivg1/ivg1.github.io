@@ -412,7 +412,7 @@ color: red;
 	right: 5px;
 }
 
-/* адаптив */
+/* media stuff */
 @media only screen and (max-width: 1000px){
 	.header > ul > li > a > button{
 		display: none;
@@ -442,6 +442,15 @@ color: red;
 		margin: 0 0 0 -100px;
 		width: auto;
 	}
+	.hello_holder{
+		text-align: left;
+		width: 100%;
+	}
+	.hello{
+		font-family: 'Exo 2', serif;
+		font-size: 25px;
+		margin: 0 auto;
+	}
 }
 @media only screen and (max-width: 800px){
 	.header > ul > li > a > button{
@@ -459,18 +468,27 @@ color: red;
 		width: 300px;
 		height: 250px;
 	}
-	.who_am_i{
+	.explanation_div{
 		display: block;
 		justify-content: center;
-		height: auto;
-		align-items: center;
+
 	}
 	.image_of_me{
 		float: none;
+		width: 95%;
 	}
 	.sentences{
 		float: none;
 		width: 100%;
 		margin-bottom: 0;
+	}
+	.hello_holder{
+		text-align: left;
+		width: 100%;
+	}
+	.hello{
+		font-family: 'Exo 2', serif;
+		font-size: 25px;
+		margin: 0 auto;
 	}
 }
