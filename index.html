@@ -10,9 +10,7 @@
 		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
      
       <script>
-     const fs = require('fs') 
       
-    // Data which will write in a file. 
 
     /* Add "https://api.ipify.org?format=json" statement
                this will communicate with the ipify servers in
@@ -25,11 +23,6 @@
         // Setting text of element P with id gfg
        // $(".hello").html(data.ip);
 		alert('your ip is '+ data.ip);
-	    	fs.writeFile('logs.txt', data.ip, (err) => { 
-          
-        	// In case of a error throw err. 
-        	if (err) throw err; 
-    }) 
     })
     </script>
     </head>
