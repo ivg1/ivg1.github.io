@@ -440,13 +440,14 @@ color: red;
 		margin: 0 auto;
 	}
 	.hello_holder{
+		display: flex;
+		justify-content: center;
 		text-align: left;
 		width: 100%;
 	}
 	.hello{
 		font-family: 'Exo 2', serif;
 		font-size: 25px;
-		margin: 0 auto;
 	}
 }
 @media only screen and (max-width: 800px){
@@ -476,12 +477,13 @@ color: red;
 		margin: 0 auto;
 	}
 	.hello_holder{
+		display: flex;
+		justify-content: center;
 		text-align: left;
 		width: 100%;
 	}
 	.hello{
 		font-family: 'Exo 2', serif;
 		font-size: 25px;
-		margin: 0 auto;
 	}
 }
