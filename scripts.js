@@ -151,6 +151,17 @@ function show_image(){
 	image_clicked_on.setAttribute("src", images_array_science[images_array_count]);
 	image_title.innerHTML = images_array_science[images_array_count];
 }
+document.onkeydown = function(event) {
+	switch (event.keyCode) {
+		case 37:
+			previous_image();
+			break;
+		case 39:
+			next_image();
+			break;
+	}
+}
+
 function previous_image(){
 	images_array_count-=1;
 	if (images_array_count < 0){
