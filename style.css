@@ -444,6 +444,7 @@ color: red;
 		justify-content: center;
 		text-align: left;
 		width: 100%;
+		margin: 0 -10px;
 	}
 	.hello{
 		font-family: 'Exo 2', serif;
@@ -481,6 +482,7 @@ color: red;
 		justify-content: center;
 		text-align: left;
 		width: 100%;
+		margin: 0 -10px;
 	}
 	.hello{
 		font-family: 'Exo 2', serif;
