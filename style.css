@@ -450,6 +450,9 @@ color: red;
 		font-family: 'Exo 2', serif;
 		font-size: 25px;
 	}
+	.who_am_i{
+		height: auto;
+	}
 }
 @media only screen and (max-width: 800px){
 	.header > ul > li > a > button{
@@ -487,5 +490,8 @@ color: red;
 	.hello{
 		font-family: 'Exo 2', serif;
 		font-size: 25px;
+	}
+	.who_am_i{
+		height: auto;
 	}
 }
