@@ -469,6 +469,7 @@ color: red;
 	.explanation_div{
 		display: block;
 		justify-content: center;
+		height: auto;
 	}
 	.image_of_me{
 		float: none;
