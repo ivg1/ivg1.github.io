@@ -90,6 +90,7 @@ body{
 .intro_me > svg{
 	position: absolute;
 	bottom: 0;
+	z-index: -10;
 }
 .hello_description{
 	color: #808080;
