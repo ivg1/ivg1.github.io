@@ -347,6 +347,7 @@ color: red;
 	top: 0;
 	left: 0;
 	color: white;
+	z-index: 100;
 }
 .show_note_holder_vis{
 	visibility: visible;
@@ -431,27 +432,89 @@ color: red;
 	}
 	.image_of_me{
 		float: none;
-		width: 90%;
+		width: 450px;
+		height: 400px;
 		margin: 0 auto;
 	}
 	.sentences{
 		float: none;
 		width: 95%;
-		margin: 0 auto;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.hello_holder{
 		display: flex;
 		justify-content: center;
 		text-align: left;
-		width: 100%;
-		margin: 0 0 0 0;
-	}
-	.hello{
-		font-family: 'Exo 2', serif;
-		font-size: 25px;
+		width: 96%;
+		margin: 0 5px;
 	}
 	.who_am_i{
 		height: auto;
+	}
+	.bottom_links_scrolled{
+		width: 100%;
+		height: auto;
+		background-color: #173259;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		color: white;
+		margin: 0;
+	}
+	.column{
+		height: auto;
+		width: 150px;
+		display: block;
+		text-align: center;
+		margin: 5px auto;
+	}
+	.column_big{
+		height: auto;
+		width: 150px;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.images_child{
+		flex-grow: 0;
+		flex-shrink: 0;
+		flex-basis: 50px;
+		height: 100px;
+		background-color: #dedede;
+		border-radius: 7px;
+		margin: 5px;
+	}
+	.show_note_header{
+		width: 100%;
+		height: 50px;
+		background-color: #545454;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+	}
+	.show_note_header > h2{
+		font-size: 12px;
+	}
+	.show_note_footer{
+		width: 100%;
+		height: 50px;
+		background-color: #545454;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+	}
+	.show_note_image{
+		background-color: black;
+		width: 100%;
+		height: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 }
 @media only screen and (max-width: 800px){
@@ -467,13 +530,15 @@ color: red;
 		visibility: visible;
 	}
 	.explanation_div{
-		display: block;
+		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		height: auto;
 	}
 	.image_of_me{
 		float: none;
-		width: 90%;
+		width: 360px;
+		height: 320px;
 		margin: 0 auto;
 	}
 	.sentences{
@@ -485,14 +550,187 @@ color: red;
 		display: flex;
 		justify-content: center;
 		text-align: left;
-		width: 100%;
-		margin: 0 0 0 0;
-	}
-	.hello{
-		font-family: 'Exo 2', serif;
-		font-size: 25px;
+		width: 96%;
+		margin: 0 5px;
 	}
 	.who_am_i{
 		height: auto;
+		padding: 0;
+	}
+	.bottom_links_scrolled{
+		width: 100%;
+		height: auto;
+		background-color: #173259;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		color: white;
+		margin: 0;
+	}
+	.column{
+		height: auto;
+		width: 150px;
+		display: block;
+		text-align: center;
+		margin: 5px auto;
+	}
+	.column_big{
+		height: auto;
+		width: 150px;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.images_child{
+		flex-grow: 0;
+		flex-shrink: 0;
+		flex-basis: 50px;
+		height: 100px;
+		background-color: #dedede;
+		border-radius: 7px;
+		margin: 5px;
+	}
+	.show_note_header{
+		width: 100%;
+		height: 50px;
+		background-color: #545454;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		font-size: 24px;
+	}
+	.show_note_footer{
+		width: 100%;
+		height: 50px;
+		background-color: #545454;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+	}
+	.show_note_header > h2{
+		font-size: 12px;
+	}
+	.show_note_image{
+		background-color: black;
+		width: 100%;
+		height: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+@media only screen and (max-width: 400px){
+	.header > ul > li > a > button{
+		display: none;
+		width: 0px;
+		height: 0px;
+	}
+	.header > ul > li > a {
+		display: flex;
+	}
+	.header > ul > li > a > svg{
+		visibility: visible;
+	}
+	.explanation_div{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: auto;
+	}
+	.image_of_me{
+		float: none;
+		width: 180px;
+		height: 160px;
+		margin: 0 auto;
+	}
+	.sentences{
+		float: none;
+		width: 95%;
+		margin: 0 auto;
+	}
+	.hello{
+		font-size: 36px;
+	}
+	.hello_holder{
+		display: flex;
+		justify-content: center;
+		text-align: left;
+		width: 96%;
+		margin: 0 5px;
+	}
+	.who_am_i{
+		height: auto;
+	}
+	.bottom_links_scrolled{
+		width: 100%;
+		height: auto;
+		background-color: #173259;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		color: white;
+		margin: 0;
+	}
+	.column{
+		height: auto;
+		width: 150px;
+		display: block;
+		text-align: center;
+		margin: 5px auto;
+	}
+	.column_big{
+		height: auto;
+		width: 150px;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.images_child{
+		flex-grow: 0;
+		flex-shrink: 0;
+		flex-basis: 50px;
+		height: 100px;
+		background-color: #dedede;
+		border-radius: 7px;
+		margin: 5px;
+	}
+	.show_note_header{
+		width: 100%;
+		height: 50px;
+		background-color: #545454;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		font-size: 24px;
+	}
+	.show_note_header > h2{
+		font-size: 12px;
+	}
+	.show_note_header > svg{
+		height: 0.5em;
+	}
+	.show_note_footer{
+		width: 100%;
+		height: 50px;
+		background-color: #545454;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+	}
+	.show_note_image{
+		background-color: black;
+		width: 100%;
+		height: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 }
